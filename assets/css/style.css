@@ -89,44 +89,51 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #FF4F38;
-  --theme-color2: #FFEC40;
-  --title-color: #13182B;
-  --body-color: #57585F;
-  --smoke-color: #F8FAFE;
-  --smoke-color2: #FFF7F6;
-  --smoke-color3: #FFF3E0;
+  --theme-color: #e55daa;         /* Gradient Pink from logo */
+  --theme-color2: #3DA8E0;          /* Sky Blue from logo */
+  --title-color: #222222;          /* Dark Charcoal for headings */
+  --body-color: #57585F;           /* Keeping for good readability */
+  --smoke-color: #F4F4F4;          /* Soft Gray for clean backgrounds */
+  --smoke-color2: #F8FAFE;         /* Very light for section backgrounds */
+  --smoke-color3: #FFF3E0;         /* Subtle warm background */
   --black-color: #000000;
-  --black-color2: #202844;
-  --th-border-color: #E1E4E5;
+  --black-color2: #202844;         /* Dark slate, can remain */
+  --th-border-color: #E1E4E5;      /* Light borders */
   --th-border-color2: #EEEFF2;
   --th-border-color3: rgba(87, 88, 95, 0.5);
   --th-border-color4: rgba(198, 201, 212, 0.5);
   --light-color: #C6C9D4;
   --gray-color: #D7D7D7;
-  --gray-color2: #F4F3E6;
+  --gray-color2: #F4F4F4;          /* Matches smoke */
   --black-color3: #051311;
   --black-color4: #00110E;
   --black-color5: #22272E;
   --black-color6: #2D333D;
   --black-color7: #0E0E13;
-  --white-color: #ffffff;
-  --yellow-color: #FFB539;
-  --success-color: #28a745;
-  --error-color: #dc3545;
+  --white-color: #FFFFFF;
+  --yellow-color: #F3B23E;         /* Golden Yellow from logo */
+  --success-color: #90C965;        /* Leaf Green from logo */
+  --error-color: #D93F97;          /* Gradient Pink for errors */
   --th-border-color5: #49515C;
   --th-border-color6: #383D46;
+  
+  /* Typography */
   --title-font: "DM Sans", sans-serif;
   --body-font: "Inter", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
+
+  /* Layout */
   --main-container: 1680px;
   --container-gutters: 24px;
   --section-space: 150px;
   --section-space-mobile: 80px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
-  --th-body-background: #ffffff;
+
+  /* Background */
+  --th-body-background: #FFFFFF;
 }
+
 
 /*------------------- 1.4. Typography -------------------*/
 html,
@@ -195,7 +202,7 @@ body::-webkit-scrollbar-thumb {
   --th-body-background: #13182B;
 }
 
-.theme-yellow2 {
+/* .theme-yellow2 {
   --theme-color: #FFEC40;
   --theme-color2: #3282FB;
 }
@@ -214,11 +221,11 @@ body::-webkit-scrollbar-thumb {
 
 .theme-yellow2 .slider-drag-cursor {
   color: var(--title-color);
-}
-
-.theme-yellow2 .cursor-follower {
-  mix-blend-mode: difference;
-}
+  } */
+  
+  .theme-yellow2 .cursor-follower {
+    mix-blend-mode: difference;
+  }
 
 iframe {
   border: none;
@@ -3192,52 +3199,64 @@ textarea.is-invalid {
 
 @-webkit-keyframes greentopBubbles {
   0% {
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+ 40% 90%, 55% 90%, 70% 90%;
   }
   50% {
-    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+ 50% 50%, 65% 20%, 90% 30%;
   }
   100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+ 50% 40%, 65% 10%, 90% 20%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
 
 @keyframes greentopBubbles {
   0% {
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+ 40% 90%, 55% 90%, 70% 90%;
   }
   50% {
-    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+ 50% 50%, 65% 20%, 90% 30%;
   }
   100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+ 50% 40%, 65% 10%, 90% 20%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
 
 @-webkit-keyframes greenbottomBubbles {
   0% {
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+ 70% -10%, 70% 0%;
   }
   50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+ 105% 0%;
   }
   100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+ 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
 
 @keyframes greenbottomBubbles {
   0% {
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+ 70% -10%, 70% 0%;
   }
   50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+ 105% 0%;
   }
   100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+ 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
@@ -19494,7 +19513,9 @@ span.select2-selection.select2-selection--single:focus {
 .blog-grid-wrap {
   display: grid;
   gap: 24px;
-  grid-template-areas: "one one one one one two two two two two two two" "one one one one one three three three three three three three" "one one one one one four four four four four four four";
+  grid-template-areas: "one one one one one two two two two two two two"
+ "one one one one one three three three three three three three"
+ "one one one one one four four four four four four four";
 }
 
 .blog-grid .blog-img {
@@ -19602,7 +19623,10 @@ span.select2-selection.select2-selection--single:focus {
 /* Large devices */
 @media (max-width: 1199px) {
   .blog-grid-wrap {
-    grid-template-areas: "one one one" "two two two" "three three three" "four four four";
+    grid-template-areas: "one one one"
+ "two two two"
+ "three three three"
+ "four four four";
   }
   .blog-grid:nth-child(1) {
     margin-bottom: 24px;
